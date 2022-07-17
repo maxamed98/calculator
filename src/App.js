@@ -1,5 +1,6 @@
 import "./App.css";
 import { useState } from "react";
+import { type } from "@testing-library/user-event/dist/type";
 
 function App() {
   const [calc, setCalc] = useState("");
@@ -15,7 +16,9 @@ function App() {
   const handleEnter = () => {
     try {
       const res = eval(calc);
-      setCalc(String(res));
+      if (typeof res === "number") {
+        setCalc(String(res));
+      }
     } catch (e) {
       console.log(e);
     }
