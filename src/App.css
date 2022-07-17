@@ -5,5 +5,23 @@
 }
 
 .main{
-  
+  width:600px;
+  height:600px;
+  background:grey;
+  position:absolute;
+  top:50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+}
+
+.header{
+  height:100px;
+  width:600px;
+  background:rgb(79, 172, 171);
+}
+
+.body{
+  height:500px;
+  width:600px;
+  background:rgb(154, 68, 180)
 }
