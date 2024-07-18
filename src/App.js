@@ -166,7 +166,6 @@ function App() {
           </div>
         </div>
       </div>
-      <h5>MD PRODUCTIONS</h5>
     </div>
   );
 }
